@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase - Find Your Perfect Parking Spot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">ParkEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#search">Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bookings">My Bookings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-light text-primary ms-2" href="#login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4 mb-4">Find Your Perfect Parking Spot</h1>
+            <div class="search-container bg-light p-4 rounded shadow">
+                <form id="searchForm" class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="location" placeholder="Enter location" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="time" class="form-control" id="time" required>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section id="searchResults" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Filters -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Filters</h5>
+                            <form id="filterForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Price Range</label>
+                                    <input type="range" class="form-range" id="priceRange" min="0" max="100">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Distance</label>
+                                    <select class="form-select" id="distance">
+                                        <option value="1">Within 1 km</option>
+                                        <option value="2">Within 2 km</option>
+                                        <option value="5">Within 5 km</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Amenities</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="covered">
+                                        <label class="form-check-label">Covered Parking</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="ev">
+                                        <label class="form-check-label">EV Charging</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="security">
+                                        <label class="form-check-label">24/7 Security</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- Results Grid -->
+                    <div id="resultsGrid" class="row g-4">
+                        <!-- Results will be dynamically populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Spots -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Parking Spots</h2>
+            <div class="row g-4" id="featuredSpots">
+                <!-- Featured spots will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ParkEase</h5>
+                    <p>Find the perfect parking spot, anytime, anywhere.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                        <li><a href="#" class="text-light">Terms of Service</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@parkease.com<br>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
