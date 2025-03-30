@@ -1,7 +1,7 @@
 {
-    "name": "parkease-server",
+    "name": "parksmart-server",
     "version": "1.0.0",
-    "description": "Backend server for ParkEase parking space booking platform",
+    "description": "Backend server for ParkSmart parking space booking platform",
     "main": "server.js",
     "scripts": {
       "start": "node server.js",
