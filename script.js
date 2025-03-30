@@ -8,8 +8,8 @@ const featuredSpots = document.getElementById('featuredSpots');
 const mockParkingSpots = [
     {
         id: 1,
-        name: "Downtown Secure Parking",
-        address: "123 Main St, Downtown",
+        name: "CMR IT parking slot",
+        address: "#132, AECS Layout Cross, Bengaluru",
         price: 15,
         distance: 0.5,
         rating: 4.5,
