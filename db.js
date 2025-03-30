@@ -7,15 +7,15 @@ const payments = new Map();
 // Initialize with some mock data
 parkingSpots.set('1', {
     id: '1',
-    name: 'Downtown Secure Parking',
-    address: '123 Main St, Downtown',
+    name: 'CMR IT parking slot',
+    address: '#132, AECS Layout Cross, Bengaluru',
     location: { lat: 40.7128, lng: -74.0060 },
     price: 15,
     capacity: 50,
     availableSpots: 30,
     amenities: ['covered', 'security', 'ev'],
     rating: 4.5,
-    image: 'https://images.unsplash.com/photo-1590674899484-13da0d1b58c5?auto=format&fit=crop&w=800&q=80'
+    image: 'https://www.bing.com/images/search?view=detailV2&ccid=ETV3NJ%2fT&id=A19C2EE5D35C1372C1CE34779913FE9DF919CEFF&thid=OIP.ETV3NJ_T3VB1PnuhHqNq6gHaFj&mediaurl=https%3a%2f%2fimgk.timesnownews.com%2fstory%2f1200_x_900_9_7.png&exph=900&expw=1200&q=parking+slot+images&simid=608028342106542965&FORM=IRPRST&ck=E0688E5BC46FD10D872C2A46C2C67B15&selectedIndex=54&itb=0'
 });
 
 parkingSpots.set('2', {
